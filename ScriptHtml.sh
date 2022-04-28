@@ -2,7 +2,7 @@
  
 JMETERPLUGINSCMD=JMeterPluginsCMD.sh
  
-./cleanup.sh
+
  
 # run jmeter and produce a JTL csv report
 jmeter -n -t  $WORKSPACE/test.jmx -l reportejenkins.jtl -e -o dashboard
