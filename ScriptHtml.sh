@@ -5,7 +5,7 @@ JMETERPLUGINSCMD=JMeterPluginsCMD.sh
 
  
 # run jmeter and produce a JTL csv report
-jmeter -n -t  $WORKSPACE/test.jmx -l reportejenkins.jtl -e -o dashboard
+jmeter -n -t  $WORKSPACE/hb_0324.jmx -l reportejenkins.jtl -e -o dashboard
  
 # process JTL and covert it to a synthesis report as CSV
 $JMETERPLUGINSCMD --generate-csv synthesis_results.csv --input-jtl reportejenkins.jtl --plugin-type SynthesisReport
